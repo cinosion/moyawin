@@ -47,7 +47,7 @@ var canvasTextDraw = function(word, radio){
   var wordList = word.split('\n');
   var lineHeight = ctx.measureText("あ").width;
   if(radio=='red'){
-    ctx.fillStyle = 'rgba(200, 0, 0, 0.8)';
+    ctx.fillStyle = 'rgba(200, 0, 0, 0.9)';
     ctx.fillRect(178,1666,5,150);
     ctx.fillRect(188,1666,5,150);
     ctx.fillStyle = 'black';
