@@ -73,6 +73,9 @@ var changeImage = function(){
   var png = canvas.toDataURL();
   document.getElementById("newImg").src = png;
 
+  var downloadLink = document.getElementById('download_link');
+  var filename = 'your-filename.png';
+
   downloadLink.href = canvas.toDataURL('image/png');
   downloadLink.download = filename;
   downloadLink.click();
