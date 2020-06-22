@@ -52,7 +52,7 @@ var render = function(word='憲法改正', radio=radioStyle, save='whole'){
       });
     });
   }
-  changeImage();
+  // changeImage();
 }
 
 
@@ -69,16 +69,30 @@ var radioUpdater = function(){
 }
 
 var changeImage = function(){
-
   var png = canvas.toDataURL();
   document.getElementById("newImg").src = png;
-
+/*
   var downloadLink = document.getElementById('download_link');
-  var filename = 'your-filename.png';
+  var filename = 'moyawin.png';
 
   downloadLink.href = canvas.toDataURL('image/png');
   downloadLink.download = filename;
   downloadLink.click();
+*/
+}
+
+var moyawin_save_full(){
+  var downloadLink = document.getElementById('download_link');
+  var filename = 'moyawin.png';
+
+  downloadLink.href = canvas.toDataURL('image/png');
+  downloadLink.download = filename;
+  downloadLink.click();
+}
+
+var moyawin_save_four(){
+  var downloadLink = document.getElementById('download_link');
+  var filename = 'moyawin.png';
 }
 
 var main = function(){
