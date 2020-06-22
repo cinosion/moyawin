@@ -36,7 +36,7 @@ footer{
 .inputter{
   font-size: 1em;
 }
-canvas {
+canvas#moyawin2 {
   border: solid lightgray;
   border-width: 1px 0px;
   border-radius: 3px;
@@ -67,11 +67,11 @@ canvas {
 
 <aside>
 <section id="canvass">
-<div><img id="newImg"></div>
 <!-- <img src="moyawin2.jpg" alt="moyawin2" title="moyawin2"> -->
-<canvas id="moyawin2" width="276" height="683"></canvas>
+<canvas id="moyawin2" width="290" height="683"></canvas>
 <!-- 827 × 2048 683-->
 </section>
+<!-- <div><img id="newImg"></div> -->
 </aside>
 
 <aside class="right">
@@ -79,7 +79,7 @@ canvas {
 <p>いま必要なのは</p>
 <form name='form1' class="inputter input-form">
 <div>
-<textarea name='textarea1' class="inputter input-textarea" placeholder="はじめに言葉を入力してください" rows="1" cols="22"></textarea>
+<textarea name='textarea1' class="inputter input-textarea" placeholder="はじめに言葉ありき" rows="1" cols="22"></textarea>
 </div>
 <div>
 <button type='button' class="inputter input-button" onclick="moyawin_drawString()">
@@ -93,20 +93,28 @@ canvas {
 <p>選択する</p>
 <form name="radioGroup">
 <input type="radio" name="q1" value="red" checked> 赤線
-<input type="radio" name="q1" value="white"> 白塗
+<input type="radio" name="q1" value="white"> 置換
 </form>
 </section>
 
 <section class="right-elem">
-<p>淘汰する</p>
+<p>生き残る</p>
 <button type='button' class="inputter save-button" onclick="moyawin_save_full()">
-全て生き残る
+保存
 </button>
+<!--
 <button type='button' class="inputter save-button" onclick="moyawin_save_four()">
 4コマ目だけ生き残る
 </ button>
+-->
+</section>
+
+<!--
+<section class="right-elem" id="canvass4">
+<canvas id="moyawin4" width="310" height="228"></canvas>
 </section>
 </aside>
+-->
 
 <section>
 <a id="download_link"></a>
