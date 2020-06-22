@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>もやウィン✧ジェネレータ</title>
+    <meta charset="utf-8"/>
+    <script src="main.js" defer></script>
+<style>
+body{
+  margin: 2% 10%;
+  font-size: 1em;
+  text-align: center;
+}
+article{
+  display: flex;
+  justify-content: center;
+}
+aside.right{
+  flex-direction: column;
+}
+section {
+  margin: 1em;
+}
+section.right-elem{
+  padding: 2px;
+  padding-bottom: 10px;
+  border: solid lightgray;
+  border-width: 1px 0px;
+  border-radius: 3px;
+}
+form.input-form{
+  flex-direction: column;
+}
+footer{
+  margin: 2% 0%;
+}
+.inputter{
+  font-size: 1em;
+}
+canvas {
+  border: solid lightgray;
+  border-width: 1px 0px;
+  border-radius: 3px;
+}
+/*
+#canvass{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 251%;
+}
+#moyawin2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+*/
+</style>
+</head>
+
+
+<body>
+  <header>もやウィン✧ジェネレータ</header>
+  <aside></aside>
+  <article>
+
+<aside>
+<section id="canvass">
+<!-- <img src="moyawin2.jpg" alt="moyawin2" title="moyawin2"> -->
+<canvas id="moyawin2" width="276" height="683"></canvas>
+<!-- 827 × 2048 683-->
+</section>
+</aside>
+
+<aside class="right">
+<section class="right-elem inputter">
+<p>いま必要なのは</p>
+<form name='form1' class="inputter input-form">
+<div>
+<textarea name='textarea1' class="inputter input-textarea" placeholder="はじめに言葉を入力してください" rows="1" cols="22"></textarea>
+</div>
+<div>
+<button type='button' class="inputter input-button" onclick="moyawin_drawString()">
+変化させる
+</button>
+</div>
+</form>
+</section>
+
+<section class="right-elem">
+<p>選択する</p>
+<form name="radioGroup">
+<input type="radio" name="q1" value="red" checked> 赤線
+<input type="radio" name="q1" value="white"> 白塗
+</form>
+</section>
+
+<section class="right-elem">
+<p>淘汰する</p>
+<button type='button' class="inputter save-button" onclick="moyawin_save_full()">
+全て生き残る
+</button>
+<button type='button' class="inputter save-button" onclick="moyawin_save_four()">
+4コマ目だけ生き残る
+</ button>
+</section>
+</aside>
+
+<section>
+<div><img id="newImg"></div>
+</section>
+
+  </article>
+  <footer></footer>
+</body>
+</html>
